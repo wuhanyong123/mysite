@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编辑用户</title>
+</head>
+<body>
+<h1>编辑用户名</h1>
+<form action="/edit_user/" method="post">
+    <p><input type="text" name="id" value="{{ new_name.id }}" style="display:none"></p>
+    <p>用户名：<input type="text" name="username" value="{{ new_name.name }}"></p>
+    <p><input type="submit" value="提交"></p>
+    <p style="color:red">{{ error }}</p>
+</form>
+</body>
+</html>
